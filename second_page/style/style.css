@@ -66,6 +66,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 50px 0 40px;
+  justify-content: center;
 }
 
 .body .body_content .content {
@@ -85,7 +86,7 @@
   text-align: center;
 }
 
-.watch_now {
+.body .watch_now {
   margin: auto;
   background: #04162b;
   border-radius: 3px 30px 30px 3px;
@@ -93,4 +94,27 @@
   height: 61px;
   border: none;
   color: #feffd3;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 54px 60px;
+}
+
+footer img {
+  width: 127px;
+  height: 38px;
+}
+
+footer:after {
+  position: absolute;
+  content: "";
+  opacity: 0.3;
+  top: 18px;
+  left: 151px;
+  border: 1px solid #feffd3;
+  width: calc(100% - 305px);
 }
