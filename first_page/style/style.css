@@ -1,145 +1,122 @@
 .first-page {
-  width: 1440px;
-  height: 820px;
+  min-width: 1440px;
+  min-height: 820px;
   background: url("../image/bg.png");
-  background-size: 1443px calc(100% + 60px);
+  background-size: 100%;
+}
+
+.first-page header {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 80px 18px;
 }
 
-header .main_logo {
+.first-page header .menu {
   position: absolute;
-  top: 39px;
-  left: 72px;
-}
-
-.block_menu {
-  top: 60px;
+  display: flex;
+  top: 67px;
   left: 298px;
-  position: absolute;
-  display: inline-block;
 }
 
-.menu li {
-  display: inline;
-  margin-left: 50px;
+.first-page header .menu li {
+  margin-right: 50px;
+}
+.first-page header .menu a {
+  text-decoration: none;
   color: white;
+  font-size: 16px;
 }
 
-header .main_burger {
+.first-page header:before {
+  content: "";
   position: absolute;
-  right: 60px;
-  top: 44px;
+  border: 1px solid #feffd3;
+  top: 74px;
+  left: 696px;
+  width: calc(100% - 903px);
+  opacity: 0.3;
 }
 
-header .line {
+.first-page .body {
+  margin: 43px 95px 0;
+}
+
+.first-page .body:after {
   position: absolute;
-  width: 516px;
-  height: 0px;
-  left: 456px;
-  top: 0px;
+  content: "";
   opacity: 0.3;
   border: 1px solid #feffd3;
+  height: calc(100% - 300px);
+  top: 125px;
+  right: 80px;
 }
 
-.body .S8E4 {
-  position: absolute;
-  left: 80px;
-  top: 144px;
-  color: #feffd3;
-  font-weight: bold;
+.first-page .body .S8E4 {
   font-size: 18px;
+  color: #feffd3;
 }
 
-.body .Knight {
-  position: absolute;
-  left: 80px;
-  top: 184px;
+.first-page .body .Knight {
+  margin-top: 18px;
   font-size: 72px;
   line-height: 84px;
-
   color: #feffd3;
+  width: 600px;
+  height: 170px;
 }
 
-.body .Arryn {
-  position: absolute;
-  left: 80px;
-  top: 388px;
-
+.first-page .body .Arryn {
+  margin-top: 53px;
+  width: 465px;
+  height: 74px;
   font-size: 16px;
   line-height: 156.23%;
   letter-spacing: 0.02em;
-
   color: #b9bcc7;
 }
 
-.body .line2 {
-  position: absolute;
-  height: 535px;
-  right: 60px;
-  top: 125px;
-  opacity: 0.3;
-  border: 1px solid #feffd3;
-}
-
-.block_menu .menu a {
-  text-decoration: none;
-  color: #fff8f8;
-}
-
-.button .syn {
-  position: absolute;
-  width: 74px;
-  height: 23px;
-  left: 141px;
-  top: 525px;
+.first-page .body .syn {
+  width: 188px;
+  height: 61px;
   border: none;
-  font-family: Montserrat;
-  font-weight: 500;
   font-size: 16px;
   color: #feffd3;
   background: transparent;
+  margin-top: 44px;
 }
 
-.button .watch {
-  position: absolute;
-  left: 299px;
-  top: 506px;
-  font-family: Montserrat;
-  font-size: 16px;
-  color: #feffd3;
-
-  background: #04162b;
-  border-radius: 3px 30px 30px 3px;
-  width: 148px;
+.first-page .body .watch {
+  width: 188px;
   height: 61px;
   border: none;
-}
-
-.footer .pm {
-  position: absolute;
-  width: 84px;
-  height: 21px;
-  left: 80px;
-  bottom: 76px;
-
-  font-family: Montserrat;
-  font-size: 14px;
-  line-height: 150.19%;
+  font-size: 16px;
+  background: #04162b;
+  margin: 50px 31px 0;
+  border-radius: 3px 30px 30px 3px;
   color: #feffd3;
 }
 
-.footer .line3 {
-  position: absolute;
-  width: 1062px;
-  height: 0px;
-  left: 189px;
-  bottom: 76px;
-  opacity: 0.3;
-  border: 1px solid #feffd3;
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 80px 0;
 }
 
-.footer .mask {
+footer .pm {
+  font-size: 14px;
+  color: #feffd3;
+  margin-top: 9px;
+}
+
+
+footer:after {
   position: absolute;
-  right: 58px;
-  top: 715px;
+  content: "";
+  opacity: 0.3;
+  border: 1px solid #feffd3;
+  width: calc(100% - 246px);
+  left: 100px;
+  top: 16px;
 }

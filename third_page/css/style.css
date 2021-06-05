@@ -1,126 +1,107 @@
 .third-page {
+  position: absolute;
   background: url("../image/bg_image.png") no-repeat;
-  width: 1440px;
-  height: 800px;
+  min-width: 1440px;
+  min-height: 800px;
 }
 
-.img-logo {
-  position: absolute;
-  top: 41px;
-  left: 71px;
+.third-page header {
+  display: flex;
+  align-items: center;
+  margin: 44px 80px 0;
 }
 
-.left-line {
-  position: absolute;
-  width: 321px;
-  height: 0px;
-  left: 285px;
-  top: 63px;
-  opacity: 0.3;
-  border: 1px solid #feffd3;
-}
-
-.episodes {
-  position: absolute;
-  width: 149px;
-  height: 33px;
-  left: 644px;
-  top: 53px;
+.third-page header h1 {
+  position: relative;
+  width: 100%;
   font-size: 36px;
   color: #feffd3;
+  text-align: center;
+  margin: 0 25px;
 }
 
-.right-line {
+.third-page header h1:before {
   position: absolute;
-  width: 410px;
-  height: 0px;
-  left: 834px;
-  top: 63px;
+  content: "";
+  top: 18px;
+  left: 0;
   opacity: 0.3;
+  width: calc((100% - 210px) / 2);
   border: 1px solid #feffd3;
 }
 
-.img-burger {
+.third-page header h1:after {
   position: absolute;
-  width: 79px;
-  height: 51px;
-  left: 1281px;
-  top: 44px;
+  content: "";
+  top: 18px;
+  right: 0;
+  opacity: 0.3;
+  width: calc((100% - 210px) / 2);
+  border: 1px solid #feffd3;
 }
 
-.description {
-  position: absolute;
+.third-page .body {
+  margin: 67px 80px 0;
+}
+
+.third-page .body .description {
   width: 419px;
   height: 62px;
-  left: 80px;
-  top: 170px;
   font-size: 16px;
-  line-height: 156.23%;
   letter-spacing: 0.02em;
   color: #b9bcc7;
 }
 
-.block-left {
-  position: absolute;
-  top: 292px;
-  left: 50px;
-  width: 455px;
-  height: 323px;
+.third-page .body .block-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 50px;
 }
 
-.block-center {
-  position: absolute;
-  top: 292px;
-  left: 487px;
+.third-page .body .block {
+  position: relative;
   width: 455px;
   height: 323px;
+  margin-left: -35px;
 }
 
-.block-right {
+.third-page .body .block .block-text {
   position: absolute;
-  top: 292px;
-  left: 924px;
-  width: 455px;
-  height: 323px;
-}
-
-.block-text {
-  width: 250px;
-  height: 106px;
-  position: absolute;
-  left: 159px;
-  top: 139px;
+  width: 305px;
+  height: 106;
+  top: 134px;
+  right: 0;
+  color: #b9bcc7;
+  line-height: 22px;
+  letter-spacing: 0.02em;
   font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-  color: #b9bcc7;
 }
 
-.part {
+.third-page .body .block .part {
   position: absolute;
-  top: 267px;
   left: 30px;
-  color: #feffd3;
 }
 
-.but-left {
-  position: absolute;
-  top: 320px;
-  left: 80px;
+.third-page .body .block-flex .button {
+  display: flex;
+  flex-direction: row;
+  margin: 37px 0 0 37px;
+}
+
+.third-page .body .block-flex .button .but-left {
   width: 188px;
-  height: 65px;
+  height: 60px;
+  font-size: 14px;
+  color: #b9bcc7;
   background: transparent;
   border: none;
-  font-size: 14px;
-  color: #b9bcc7;
 }
 
-.but-right {
-  position: absolute;
-  top: 320px;
-  left: 250px;
+.third-page .body .block-flex .button .but-right {
   width: 188px;
   height: 61px;
+  margin-left: 31px;
   background: #04162b;
   border-radius: 3px 30px 30px 3px;
   border: none;
@@ -128,24 +109,26 @@
   color: #feffd3;
 }
 
-.foot-mask {
-  position: absolute;
-  top: 720px;
-  left: 60px;
+.third-page footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 76px 60px;
 }
 
-.bottom-line {
-  position: absolute;
-  width: 1075px;
-  left: 213px;
-  top: 728px;
+.third-page footer .foot-mask {
+  width: 127px;
+  height: 38px;
+  margin-top: 5px;
+}
 
+.third-page footer:before {
+  position: absolute;
+  content: "";
   opacity: 0.3;
   border: 1px solid #feffd3;
-}
-
-.foot-bow {
-  position: absolute;
-  top: 710px;
-  right: 70px;
+  width: calc(100% - 240px);
+  left: 151px;
+  top: 25px;
 }
