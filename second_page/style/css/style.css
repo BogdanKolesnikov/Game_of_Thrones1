@@ -1,20 +1,17 @@
 .second-page {
-  position: absolute;
-  background: url("../image/bg.png");
-  min-width: 100%;
-  min-height: 100%;
+  background: url("../../image/bg.png") no-repeat;
+  max-width: 1443px;
+  max-height: 794px;
   background-size: 100% calc(100% + 94px);
   background-position-y: -60px;
 }
-
-.header {
+.second-page .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 44px 80px 18px;
 }
-
-.header h1 {
+.second-page .header h1 {
   position: relative;
   width: 100%;
   margin: 0 25px;
@@ -25,8 +22,7 @@
   font-size: 36px;
   color: #feffd3;
 }
-
-.header h1:after {
+.second-page .header h1:after {
   position: absolute;
   content: "";
   top: 18px;
@@ -35,8 +31,7 @@
   width: calc((100% - 210px) / 2);
   border: 1px solid #feffd3;
 }
-
-.header h1:before {
+.second-page .header h1:before {
   position: absolute;
   content: "";
   top: 18px;
@@ -45,12 +40,10 @@
   width: calc((100% - 210px) / 2);
   border: 1px solid #feffd3;
 }
-
-.body {
-  margin: 0 80px 0;
+.second-page .body {
+  margin: 12px 80px 0;
 }
-
-.body .description {
+.second-page .body .description {
   text-align: center;
   width: 585.78px;
   padding-left: 70px;
@@ -61,15 +54,13 @@
   letter-spacing: 0.02em;
   color: #b9bcc7;
 }
-
-.body .body_content {
+.second-page .body .body_content {
   display: flex;
   flex-wrap: wrap;
   margin: 50px 0 40px;
   justify-content: center;
 }
-
-.body .body_content .content {
+.second-page .body .body_content .content {
   width: 361px;
   height: 196px;
   display: flex;
@@ -77,16 +68,14 @@
   align-items: center;
   margin: 0 23px 15px;
 }
-
-.body .body_content .content p {
+.second-page .body .body_content .content p {
   margin-top: 17px;
   font-size: 14px;
   line-height: 17px;
   color: #b9bcc7;
   text-align: center;
 }
-
-.body .watch_now {
+.second-page .body .watch_now {
   margin: auto;
   background: #04162b;
   border-radius: 3px 30px 30px 3px;
@@ -95,21 +84,18 @@
   border: none;
   color: #feffd3;
 }
-
-footer {
+.second-page footer {
   position: relative;
   bottom: 0;
   display: flex;
   justify-content: space-between;
   margin: 54px 60px;
 }
-
-footer img {
+.second-page footer img {
   width: 127px;
   height: 38px;
 }
-
-footer:after {
+.second-page footer:after {
   position: absolute;
   content: "";
   opacity: 0.3;
@@ -118,3 +104,5 @@ footer:after {
   border: 1px solid #feffd3;
   width: calc(100% - 305px);
 }
+
+/*# sourceMappingURL=style.css.map */

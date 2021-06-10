@@ -1,24 +1,21 @@
 .first-page {
-  min-width: 1440px;
-  min-height: 820px;
-  background: url("../image/bg.png");
-  background-size: 100%;
+  max-width: 1440px;
+  max-height: 794px;
+  background: url("../../image/bg.png");
+  background-size: cover;
 }
-
 .first-page header {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 44px 80px 18px;
 }
-
 .first-page header .menu {
   position: absolute;
   display: flex;
   top: 67px;
   left: 298px;
 }
-
 .first-page header .menu li {
   margin-right: 50px;
 }
@@ -27,8 +24,7 @@
   color: white;
   font-size: 16px;
 }
-
-.first-page header:before {
+.first-page:before {
   content: "";
   position: absolute;
   border: 1px solid #feffd3;
@@ -37,11 +33,9 @@
   width: calc(100% - 903px);
   opacity: 0.3;
 }
-
 .first-page .body {
   margin: 43px 95px 0;
 }
-
 .first-page .body:after {
   position: absolute;
   content: "";
@@ -51,12 +45,10 @@
   top: 125px;
   right: 80px;
 }
-
 .first-page .body .S8E4 {
   font-size: 18px;
   color: #feffd3;
 }
-
 .first-page .body .Knight {
   margin-top: 18px;
   font-size: 72px;
@@ -65,7 +57,6 @@
   width: 600px;
   height: 170px;
 }
-
 .first-page .body .Arryn {
   margin-top: 53px;
   width: 465px;
@@ -75,7 +66,6 @@
   letter-spacing: 0.02em;
   color: #b9bcc7;
 }
-
 .first-page .body .syn {
   width: 188px;
   height: 61px;
@@ -85,7 +75,6 @@
   background: transparent;
   margin-top: 44px;
 }
-
 .first-page .body .watch {
   width: 188px;
   height: 61px;
@@ -96,22 +85,18 @@
   border-radius: 3px 30px 30px 3px;
   color: #feffd3;
 }
-
-footer {
+.first-page footer {
   position: relative;
   display: flex;
   justify-content: space-between;
   margin: 100px 80px 0;
 }
-
-footer .pm {
+.first-page footer .pm {
   font-size: 14px;
   color: #feffd3;
   margin-top: 9px;
 }
-
-
-footer:after {
+.first-page footer:after {
   position: absolute;
   content: "";
   opacity: 0.3;
@@ -120,3 +105,5 @@ footer:after {
   left: 100px;
   top: 16px;
 }
+
+/*# sourceMappingURL=style.css.map */
